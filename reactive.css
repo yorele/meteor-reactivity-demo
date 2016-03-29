@@ -1,0 +1,29 @@
+/* CSS declarations go here */
+
+body {
+    font-family: Exo;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+select, option {
+    font-family: Exo;
+    font-size: 1em;
+    font-weight: 400;
+    width: 200px;
+    padding: 5px;
+    display: block;
+    -webkit-appearance: inherit;
+}
+
+.selection {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #7a7a7a;
+    display: block;
+}
+
+.label {
+    margin-top: 20px;
+    display: block;
+}

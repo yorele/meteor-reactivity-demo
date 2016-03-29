@@ -1,0 +1,15 @@
+<template name="select_reactive_var">
+    <select class="select">
+        {{#each options}}
+            <option value="{{value}}">{{value}}</option>
+        {{/each}}
+    </select>
+</template>
+
+
+<template name="widget_reactive_var">
+    Pick your favorite:
+    {{>select_reactive_var options=model.carOptions onChange=onSelectionChange}}
+    <div class="label">You picked: </div>
+    <div class="selection">{{value}}</div>
+</template>

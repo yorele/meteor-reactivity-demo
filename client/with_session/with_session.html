@@ -1,0 +1,15 @@
+<template name="select_session">
+    <select class="select">
+        {{#each options}}
+            <option value="{{value}}">{{value}}</option>
+        {{/each}}
+    </select>
+</template>
+
+
+<template name="widget_session">
+    Pick your favorite:
+    {{>select_session options=model.carOptions}}
+    <div class="label">You picked: </div>
+    <div class="selection">{{value}}</div>
+</template>
