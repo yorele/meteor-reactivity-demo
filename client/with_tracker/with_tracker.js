@@ -1,6 +1,11 @@
 Template.widget_tracker.onCreated(function(){
     this.tracker = new Tracker.Dependency;
     this.selection = null;
+    this.autorun(
+        function(){
+            Cars.subscribe(this.selection)
+        }
+    )
 });
 
 Template.widget_tracker.helpers({
@@ -19,7 +24,10 @@ Template.widget_tracker.helpers({
         }
     },
     "model": function () {
-        return {
+        return  Cars.find({});
+
+        {
+
             carOptions: [
                 {value: "Audi"},
                 {value: "Mercedes"},

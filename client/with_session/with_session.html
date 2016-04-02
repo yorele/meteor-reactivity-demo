@@ -8,8 +8,10 @@
 
 
 <template name="widget_session">
-    Pick your favorite:
-    {{>select_session options=model.carOptions}}
-    <div class="label">You picked: </div>
-    <div class="selection">{{value}}</div>
+    <div class="frame">
+        Pick your favorite:
+        {{>select_session options=model.carOptions}}
+        <div class="label">You picked: </div>
+        <div class="selection">{{value}}</div>
+    </div>
 </template>

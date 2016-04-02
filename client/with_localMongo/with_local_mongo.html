@@ -8,8 +8,10 @@
 
 
 <template name="widget_local_mongo">
-    Pick your favorite:
-    {{>select_local_mongo options=model.carOptions onChange=onSelectionChange}}
-    <div class="label">You picked: </div>
-    <div class="selection">{{value}}</div>
+    <div class="frame">
+        Pick your favorite:
+        {{>select_local_mongo options=model.carOptions onChange=onSelectionChange}}
+        <div class="label">You picked:</div>
+        <div class="selection">{{value}}</div>
+    </div>
 </template>

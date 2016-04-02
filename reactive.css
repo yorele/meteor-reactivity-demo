@@ -4,6 +4,14 @@ body {
     font-family: Exo;
     font-size: 1em;
     font-weight: 400;
+    padding: 10px;
+}
+
+.frame {
+    border: 1px solid #555;
+    padding: 10px;
+    width: 200px;
+    display: inline-table;
 }
 
 select, option {
@@ -17,10 +25,13 @@ select, option {
 }
 
 .selection {
-    width: 200px;
-    padding: 5px;
+    width: 94%;
+    height: 32px;
+    padding: 10px 5px 0px 5px;
     border: 1px solid #7a7a7a;
     display: block;
+    background: #195b75;
+    color: #fff;
 }
 
 .label {
